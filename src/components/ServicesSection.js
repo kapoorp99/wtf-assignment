@@ -1,10 +1,11 @@
 import React from 'react'
-import { Box, Text, VStack } from '@chakra-ui/react'
+import { Box, Text, VStack,useMediaQuery } from '@chakra-ui/react'
 import { BiMenu, BiAbacus } from 'react-icons/bi'
 
 function ServicesSection() {
+    const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
     return (
-        <Box bgColor="#ca1616" display='flex' justifyContent='space-evenly' alignItems='center' height='300'>
+        <Box bgColor="#ca1616" display='flex' justifyContent='space-evenly' alignItems='center' height={isLargerThan768?'300':'100%'}>
             <Box color='white' fontSize="3xl">
                 <h1>WTF Fitness Experience?</h1>
             </Box>
