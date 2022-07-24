@@ -1,0 +1,56 @@
+.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+    background-color: black !important;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.hero_img {
+    object-fit: cover;
+    width: 100%;
+    background-color: red;
+}
+
+.footer__heading {
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.filter__inputs {
+    background-color: #2e2e2e;
+    padding: 0.6rem 0.3rem;
+}
+
+.location__input {
+    color: white;
+}
+
+
+/* width */
+div.custom__scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+div.custom__scrollbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+div.custom__scrollbar::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 25px;
+}
+
+/* Handle on hover */
+div.custom__scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
